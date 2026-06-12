@@ -1,6 +1,15 @@
-@StudentsApi_HostAddress = http://localhost:5146
+@StudentsApi_HostAddress = http://localhost:5000
 
-GET {{StudentsApi_HostAddress}}/weatherforecast/
+GET {{StudentsApi_HostAddress}}/api/students
 Accept: application/json
 
 ###
+
+POST {{StudentsApi_HostAddress}}/api/students
+Content-Type: application/json
+
+{
+  "index": 213456,
+  "firstName": "Anna",
+  "lastName": "Nowak"
+}
